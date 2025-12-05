@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Letter-Number Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Letter-Number Converter</span>
+            </div>
+            <div class="nav-links">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+                <a href="/history"><i class="fas fa-history"></i> History</a>
+                <a href="/about" class="active"><i class="fas fa-info-circle"></i> About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="about-container">
+            <div class="about-header">
+                <h1><i class="fas fa-code"></i> About CS50 Final Project</h1>
+                <p class="subtitle">Letter-Number Converter</p>
+            </div>
+
+            <div class="about-content">
+                <section class="about-section">
+                    <h2><i class="fas fa-lightbulb"></i> Project Idea</h2>
+                    <p>
+                        This project is a web application that converts English letters to their corresponding
+                        numbers (1-26) and vice versa. It was developed as part of the final project for
+                        Harvard University's CS50 course.
+                    </p>
+                </section>
+
+                <section class="about-section">
+                    <h2><i class="fas fa-cogs"></i> Technologies Used</h2>
+                    <div class="tech-grid">
+                        <div class="tech-card">
+                            <i class="fab fa-python"></i>
+                            <h3>Python Flask</h3>
+                            <p>Backend and server</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-html5"></i>
+                            <h3>HTML5</h3>
+                            <p>Page structure</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <h3>CSS3</h3>
+                            <p>Styling and design</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fab fa-js-square"></i>
+                            <h3>JavaScript</h3>
+                            <p>Interactive interface</p>
+                        </div>
+                        <div class="tech-card">
+                            <i class="fas fa-database"></i>
+                            <h3>SQLite</h3>
+                            <p>Data storage</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="about-section">
+                    <h2><i class="fas fa-feather-alt"></i> Features</h2>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Real-time conversion without page reload</li>
+                        <li><i class="fas fa-check-circle"></i> Multiple separator options (/, -, ., |, space)</li>
+                        <li><i class="fas fa-check-circle"></i> Copy to clipboard functionality</li>
+                        <li><i class="fas fa-check-circle"></i> Text-to-speech output</li>
+                        <li><i class="fas fa-check-circle"></i> Conversion history tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Responsive design for all devices</li>
+                    </ul>
+                </section>
+
+                <section class="about-section">
+                    <h2><i class="fas fa-user-graduate"></i> CS50 Requirements</h2>
+                    <p>
+                        This project meets all CS50 final project requirements:
+                    </p>
+                    <ul class="requirements-list">
+                        <li>✓ More complex than typical CS50 problems</li>
+                        <li>✓ Interactive web application</li>
+                        <li>✓ Uses Flask backend with SQLite database</li>
+                        <li>✓ Implements JavaScript for dynamic interface</li>
+                        <li>✓ Includes proper documentation and README</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>CS50 Final Project - Letter-Number Converter</p>
+            <p>Harvard University - Computer Science 50</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-python"></i></a>
+                <a href="#"><i class="fab fa-js-square"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

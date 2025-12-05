@@ -1,0 +1,322 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #667eea;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Converter Card */
+.converter-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Direction Selector */
+.direction-selector {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dir-btn {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.dir-btn.active {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+}
+
+/* Input/Output Sections */
+.input-section, .output-section {
+    margin-bottom: 2rem;
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.separator-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.separator-select select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+/* Convert Button */
+.convert-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.convert-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s;
+}
+
+.convert-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Output Box */
+.output-box {
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    word-break: break-word;
+}
+
+/* Action Buttons */
+.output-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.action-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Examples */
+.examples {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.example {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.example-input, .example-output {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Loader */
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility Classes */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-secondary {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .direction-selector {
+        flex-direction: column;
+    }
+
+    .input-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .output-actions {
+        flex-direction: column;
+    }
+
+    .action-btn {
+        width: 100%;
+    }
+}
